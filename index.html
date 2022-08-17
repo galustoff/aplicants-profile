@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <title>Анкета</title>
+</head>
+
+<body class="page">
+  <h1 class="page__title">Empty title</h1>
+  <h2 class="page__title">Empty title</h2>
+
+  <div class="page__container">
+    <form action="" class="form">
+      <h3 class="form__title">Анкета соискателя</h3>
+      <p class="form__subtitle">Заполните небольшую анкету и мы свяжемся с вами</p>
+
+      <div class="from__container">
+        <div class="form__block form__block_side_left">
+          <input type="text" class="form__input">
+          <input type="email" class="form__input">
+          <label for="" class="form__label"><input type="file" class="form__input"></label>
+        </div>
+
+
+        <div class="form__block form__block_side_right">
+          <input type="tel" class="form__input">
+          <select name="job" id="job" class="form__select">
+            <option value="" class="form__option">Желаемая должность</option>
+            <option value="designer" class="form__option">Дизайнер</option>
+            <option value="typesetter" class="form__option">Верстальщик</option>
+            <option value="programmer" class="form__option">Программист</option>
+          </select>
+          <button type="submit" class="form__submit-btn">Отправить</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
