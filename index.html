@@ -18,19 +18,28 @@
 
   <div class="page__container">
     <form action="" class="form">
-      <h3 class="form__title">Анкета соискателя</h3>
-      <p class="form__subtitle">Заполните небольшую анкету и мы свяжемся с вами</p>
 
-      <div class="from__container">
+
+      <div class="form__container">
         <div class="form__block form__block_side_left">
-          <input type="text" class="form__input">
-          <input type="email" class="form__input">
-          <label for="" class="form__label"><input type="file" class="form__input"></label>
+          <h3 class="form__title">Анкета соискателя</h3>
+          <p class="form__subtitle">Заполните небольшую анкету и мы свяжемся с вами</p>
+
+          <input type="text" class="form__input" placeholder="Фамилия Имя Отчество">
+
+          <input type="email" class="form__input" placeholder="Электронная почта">
+
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Прикрепите файл с вашим резюме ниже</legend>
+            <label for="input-file" class="form__label">Прикрепить файл<input type="file" id="input-file"
+                class="form__input_file"></label>
+          </fieldset>
         </div>
 
 
         <div class="form__block form__block_side_right">
-          <input type="tel" class="form__input">
+          <input type="tel" class="form__input" placeholder="Номер телефона">
+
           <select name="job" id="job" class="form__select">
             <option value="" class="form__option">Желаемая должность</option>
             <option value="designer" class="form__option">Дизайнер</option>
