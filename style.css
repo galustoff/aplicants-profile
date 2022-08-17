@@ -10,7 +10,7 @@
 }
 
 .page__container {
-  padding-top: 15vh;
+  padding: 15vh 0;
 }
 
 .page__title {
@@ -21,6 +21,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  row-gap: 40px;
   align-items: center;
 }
 
@@ -28,6 +29,7 @@
   .form__container {
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: unset;
   }
 }
 
@@ -82,12 +84,44 @@
   font-weight: 700;
   font-size: 22px;
   cursor: pointer;
+  border-bottom: 2px solid transparent;
 }
 
 .form__label:hover {
-  border-bottom: 2px solid #252525;
+  border-bottom-color: #252525;
 }
 
 .form__input_file {
   display: none;
+}
+
+.form__select {
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid #252525;
+  border-left: none;
+  margin-bottom: 40px;
+  padding-bottom: 12px;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 22px;
+  position: relative;
+}
+
+.form__submit-btn {
+  margin-top: 40px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border: 1px solid #252525;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #252525;
+  display: block;
+  width: 50%;
+  cursor: pointer;
+}
+
+.form__submit-btn:hover {
+  background-color: #fff;
+  color: #252525;
 }
